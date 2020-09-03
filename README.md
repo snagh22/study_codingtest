@@ -181,21 +181,21 @@ ex) n = 17, k = 4 일 때, 17 -> 16 -> 4 -> 1 답: 3
 
 * n이 100억 이상의 큰 수가 되는 경우 n이 k의 배수가 되도록 작성
 
-    n,k = map(int,input().split())
-    result = 0
-    
-    while True:
-        #(n==k로 나누어떨어지는 수)가 될때까지 -1
-        target = (n//k)*k
-        result +=(n-target)
-        n=target
-        
-        if n<k:
-            break
-        #k로 나누기
-        result +=1
-        n//=k
-        
-    result +=(n-1)
-    print(result)
-        
+        n,k = map(int,input().split())
+        result = 0
+
+        while True:
+            #(n==k로 나누어떨어지는 수)가 될때까지 -1
+            target = (n//k)*k
+            result +=(n-target)
+            n=target
+
+            if n<k:
+                break
+            #k로 나누기
+            result +=1
+            n//=k
+
+        result +=(n-1)
+        print(result)
+
