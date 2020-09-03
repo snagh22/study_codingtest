@@ -185,7 +185,7 @@ ex) n = 17, k = 4 일 때, 17 -> 16 -> 4 -> 1 답: 3
         result = 0
 
         while True:
-            #(n==k로 나누어떨어지는 수)가 될때까지 -1
+            # -1해주기
             target = (n//k)*k
             result +=(n-target)
             n=target
