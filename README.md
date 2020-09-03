@@ -75,4 +75,19 @@ ex2) [3, 4, 3, 4, 3] m=7, k=2일 때 -> 4 + 4 + 4 + 4 + 4 + 4 + 4 = 28
 
 **point** - 반복되는 수열에 대해 파악
 
+    n,m,k = map(int,input().split())
+    array = list(map(int,input().split()))
+
+    array.sort()
+    first= array[-1]
+    second = array[-2]
+
+    result = 0
+
+    count=int(m/(k+1))*k + m%(k+1)
+    result+=first*count
+    result+=second*(m-count)
+
+    print(result)        
+
 
